@@ -25,9 +25,9 @@
                 <i class="fas fa-bars"></i>
             </label>
             <ul class="nav-list">
-                <li><a class="active" href="#">Menú</a></li>
-                <li><a href="#">Pedidos</a></li>
-                <li><a href="www.garena.com">Contactos</a></li>
+                <li><a class="active" href="#catalogo">Menú</a></li>
+                <li><a href="#catalogo">Pedidos</a></li>
+                <li><a href="#formulario">Contactos</a></li>
             </ul>
         </nav>
     </header>
@@ -35,15 +35,19 @@
         <section class="hero-section">
             <div class="main-section">
                 <p class="section-p">Elige, pide y recibe tu pedido en la comodidad de tu casa</p>
-                <div class="section-menu">
+                <div class="section-menu hero-container">
                     <figure><img src="./assets/menu.png" alt="imagen de section-menu"></figure>
-                    <p>Menú</p>
+                    <a href="#catalogo">
+                        <p>Menú</p>
+                    </a>
                 </div>
-                <div class="section-pedido">
+                <div class="section-pedido hero-container">
                     <figure>
                         <img src="./assets/delivery1.png" alt="imagen de envios">
                     </figure>
-                    <p>Realizar Pedido</p>
+                    <a href="#catalogo">
+                        <p>Realizar Pedido</p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -55,7 +59,7 @@
                 </figure>
             </div>
         </section>
-        <section class="section-catalogo">
+        <section class="section-catalogo" id="catalogo">
 
             <div class="catalogo-boton">
                 <h2>Catalogo</h2>
@@ -65,9 +69,9 @@
                     Selecciona en las imágenes los distintos combos disponibles, al final llena tus datos y presiona enviar para recibir tu pedido, pronto llegará tu delicioso pedido a la comodidad de tu hogar
                 </p>
             </div>
-            <article class="catalogo-familiar">
+            <article class="catalogo-familiar catalogo-container">
                 <h3>Menu Familiar</h3>
-                <div class="familiar">
+                <div class="familiar ">
                     <div class="familiar-detalle">
                         <span>Bucker Familiar</span>
                         <p>16 Presas + 2 papas fritas + salsas</p>
@@ -136,12 +140,12 @@
                     </figure>
                 </div>
             </article>
-            <article class="catalogo-amigos">
+            <article class="catalogo-amigos catalogo-container">
                 <h3>Menu Medianos</h3>
                 <div class="mediano">
                     <div class="mediano-detalle">
                         <span>Combo San Valentin</span>
-                        <p>4 Presas + 2 hamburguesas + 2 papas + 2 gaseosas + ensalada</p>
+                        <p>4 Presas, 2 hamburguesas, 2 papas, 2 gaseosas + ensalada</p>
                         <span>$11</span>
                     </div>
                     <figure>
@@ -172,7 +176,7 @@
                     </figure>
                 </div>
             </article>
-            <article class="catalogo-personal">
+            <article class="catalogo-personal catalogo-container">
                 <h3>Menu Personal</h3>
                 <div class="personal">
                     <div class="personal-detalle">
@@ -243,17 +247,17 @@
             </article>
         </section>
         <section class="formulario-envio">
-            <form action="" class="formulario" class="formulario">
+            <form action="" id="formulario" class="formulario">
 
                 <h1 class="formulario__titulo">Envia tu pedido al WhatsApp</h1>
 
                 <div class="box-input">
-                    <input name="nombre" id="nombre" type="text" required>
-                    <span data-placeholder="Ingrese su Nombre"></span>
+                    <input name="nombre" id="nombre" type="text" required placeholder="Ingrese su Nombre">
+                    <!-- <span data-placeholder="Ingrese su Nombre"></span> -->
                 </div>
                 <div class="box-input">
-                    <input name="direccion" id="direccion" type="text" required>
-                    <span data-placeholder="Ingrese su Dirección"></span>
+                    <input name="direccion" id="direccion" type="text" required placeholder="Ingrese su Dirección">
+                    <!-- <span data-placeholder="Ingrese su Dirección"></span> -->
                 </div>
 
 
@@ -295,7 +299,6 @@
             <span><a href="https://www.instagram.com/doritansbroaster2019/"><i class="fab fa-instagram"></i></a></span>
         </div>
     </footer>
-
 </body>
 
 </html>
