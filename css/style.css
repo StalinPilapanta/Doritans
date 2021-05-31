@@ -97,7 +97,7 @@ nav {
 
 .hero-section {
     height: 450px;
-    background-image: url("/assets/hero.jpg");
+    background-image: url("../assets/hero.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -329,10 +329,6 @@ input[type="checkbox"][id^="myCheckbox1"] {
     cursor: pointer;
 }
 
-.familiar label img {
-    /* margin-top: 15px; */
-}
-
 .familiar img {
     display: block;
     margin: auto;
@@ -428,8 +424,6 @@ input[type="checkbox"][id^="myCheckbox1"] {
 .personal-detalle p {
     width: 150px;
     padding: 5px;
-    /* margin-top: 10px;
-    margin-bottom: 15px; */
 }
 
 .personal figure {
@@ -461,17 +455,12 @@ input[type="checkbox"][id^="myCheckbox1"] {
     height: 400px;
     padding: 50px 40px;
     border-radius: 10px;
-    /* position: absolute; */
-    /* left: 50%; */
-    /* top: 50%; */
     margin: 0 auto;
-    /* transform: translate(-50%, -50%); */
     box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .formulario h1 {
     text-align: center;
-    /* margin-bottom: 60px; */
     color: #333;
     font-weight: 600;
 }
